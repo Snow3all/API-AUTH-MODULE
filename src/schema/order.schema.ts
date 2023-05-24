@@ -29,4 +29,5 @@ export class OrderHistory {
     totalPrice: number;
   }[];
 }
+
 export const OrderHistorySchema = SchemaFactory.createForClass(OrderHistory);
