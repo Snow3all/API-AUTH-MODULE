@@ -11,4 +11,9 @@ export class AppController {
   registerUser(@Body() body: AuthRegister, @Res() res: Response) {
     return this.appService.registerUser(body, res);
   }
+
+  @Post('/login')
+  loginUser(@Body() body: AuthRegister, @Res() res: Response) {
+    return this.appService.loginUser(body, res);
+  }
 }
